@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-cont">
+      <div class="cal-cont">
+        <h1 class="head">Calculator</h1>
+        <input type="text" id="input" />
+        <div>
+          <button class="btn" onclick="update(7)">7</button>
+          <button class="btn" onclick="update(8)">8</button>
+          <button class="btn" onclick="update(9)">9</button>
+          <button class="btn" id="btn2" onclick="update('x')">x</button>
+        </div>
+        <div>
+          <button class="btn" onclick="update(4)">4</button>
+          <button class="btn" onclick="update(5)">5</button>
+          <button class="btn" onclick="update(6)">6</button>
+          <button class="btn" id="btn2" onclick="update('-')">-</button>
+        </div>
+        <div>
+          <button class="btn" onclick="update(1)">1</button>
+          <button class="btn" onclick="update(2)">2</button>
+          <button class="btn" onclick="update(3)">3</button>
+          <button class="btn" id="btn2" onclick="update('+')">+</button>
+        </div>
+        <div>
+          <button class="btn" onclick="update('%')">%</button>
+          <button class="btn" onclick="update(0)">0</button>
+          <button class="btn" onclick="update('.')">.</button>
+          <button class="btn" id="btn2" onclick="update('/')">/</button>
+        </div>
+
+        <div class="result-items">
+          <button class="btn" id="btn2" onclick="clearInput()">C</button>
+          <button class="btn" id="btn2" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
